@@ -1,0 +1,77 @@
+@import "_variables.scss";
+
+.main_header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: black;
+  padding: 0.5rem 1rem;
+  z-index: 1;
+
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .toggle_button {
+      width: 3rem;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding-top: 0;
+      padding-bottom: 0;
+      vertical-align: middle;
+
+      @media ($no-mobile) {
+        display: none;
+      }
+
+      &:focus {
+        outline: none;
+      }
+
+      .toggle_button__bar {
+        width: 100%;
+        height: 0.2rem;
+        background: white;
+        display: block;
+        margin: 0.6rem 0;
+      }
+    }
+
+    .main-nav__title {
+      font-weight: bold;
+      margin: 0 1rem;
+      padding: 1rem 0;
+      color: aliceblue;
+    }
+
+    .main-nav__menu {
+      display: none;
+      @media ($no-mobile) {
+        display: flex;
+        flex-grow: 3;
+        align-content: center;
+        justify-content: flex-end;
+      }
+    }
+
+    .menu__item {
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 1rem;
+      padding: 1rem 0;
+      color: aliceblue;
+    }
+  }
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}
