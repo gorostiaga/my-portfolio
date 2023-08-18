@@ -1,4 +1,3 @@
-import MainNav from "./MainNav";
 import { ReactNode } from "react";
 
 type Props = {
