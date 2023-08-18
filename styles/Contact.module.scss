@@ -1,0 +1,71 @@
+@import "_variables.scss";
+
+.contact_section {
+  background-color: rgba(170, 170, 170, 0.185);
+  padding-bottom: 3rem;
+
+  .contact_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .contact_content__title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h3 {
+        color: #147efb;
+
+        font-size: 1.8rem;
+        margin: 1rem;
+        @media ($no-mobile) {
+          font-size: 2.3rem;
+        }
+      }
+      p {
+        font-size: 1rem;
+        margin: 0 1rem;
+        @media ($no-mobile) {
+          display: flex;
+          align-items: flex-start;
+          font-size: 1.7rem;
+        }
+      }
+    }
+
+    .contact_content__info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @media ($no-mobile) {
+        display: flex;
+        flex-direction: row;
+      }
+      span {
+        align-items: center;
+        background-color: #ffffff;
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+        cursor: pointer;
+        display: flex;
+        height: 5rem;
+        justify-content: center;
+        width: 5rem;
+        margin: 1rem 1rem;
+      }
+      .contact_content__info__mail {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media ($no-mobile) {
+          align-items: flex-start;
+          justify-content: center;
+          h3 {
+            margin: 0 0;
+          }
+        }
+      }
+    }
+  }
+}

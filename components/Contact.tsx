@@ -1,11 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
-
-import styles from "./Contact.module.css";
+import styles from "@/styles/Contact.module.scss";
+import emailIcon from "@/public/images/email.svg";
+import { roboto } from "@/utils/fonts";
 
 function Contact() {
   return (
-    <section className={styles.contact_section}>
+    <section
+      id="contact"
+      className={`${styles.contact_section} ${roboto.className}`}
+    >
       <div className={styles.container}>
         <div className={styles.contact_content}>
           <div className={styles.contact_content__title}>
@@ -15,11 +19,11 @@ function Contact() {
           <div className={styles.contact_content__info}>
             <span>
               <Image
-                src="/images/email-icon.svg"
+                src={emailIcon}
                 alt="icon"
                 width="45"
                 height="45"
-                title="Java"
+                title="email"
               />
             </span>
             <div className={styles.contact_content__info__mail}>

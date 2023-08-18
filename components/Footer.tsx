@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+import { roboto } from "@/utils/fonts";
 
-import styles from "./Footer.module.css";
+import styles from "@/styles/Footer.module.scss";
 
 function Footer() {
   return (
     <footer className={styles.footer_section}>
-      <div className={styles.container}>
+      <div className={roboto.className}>
         <div className={styles.footer_content}>
           <h3>Copyright © 2023. All rights are reserved</h3>
           <div className={styles.footer_content__social}>

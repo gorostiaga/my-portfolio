@@ -32,14 +32,17 @@ const MainNav = () => {
           </div>
           <div className={styles["main-nav__title"]}>gorostiaga.dev</div>
           <div className={styles["main-nav__menu"]}>
-            <Link href="#" className={styles["menu__item"]}>
-              About
+            <Link href="#introduction" className={styles["menu__item"]}>
+              Home
             </Link>
-            <Link href="#" className={styles["menu__item"]}>
-              About
+            <Link href="#projectsPM" className={styles["menu__item"]}>
+              Project Management
             </Link>
-            <Link href="#" className={styles["menu__item"]}>
-              About
+            <Link href="#projectsSE" className={styles["menu__item"]}>
+              Software Engineering
+            </Link>
+            <Link href="#contact" className={styles["menu__item"]}>
+              Contact
             </Link>
           </div>
         </nav>

@@ -1,4 +1,109 @@
-.projects__section {
+@import "_variables.scss";
+.projects-container {
   background-color: rgba(170, 170, 170, 0.185);
   padding-bottom: 3rem;
+  display: block;
+
+  .title-container {
+    background-color: rgba(5, 5, 5, 0.774);
+    color: white;
+
+    &[id^="projectsPM"] {
+      scroll-margin-top: 4rem;
+    }
+
+    &[id^="projectsSE"] {
+      color: black;
+      background-position: center;
+      background-size: cover;
+      p {
+        color: rgb(53, 49, 49);
+      }
+    }
+    .title-container__title {
+      h3 {
+        text-align: center;
+        font-size: 2rem;
+        padding: 1rem 0;
+        @media ($no-mobile) {
+          font-size: 3rem;
+          padding-top: 2rem;
+        }
+      }
+    }
+
+    .title-text {
+      display: grid;
+      padding: 1rem 1rem;
+      @media ($no-mobile) {
+        grid-template-columns: auto auto;
+        padding: 3rem 2rem;
+      }
+
+      .title-text__p {
+        display: flex;
+        align-items: center;
+        padding: 1rem 4rem;
+        font-size: 1.2rem;
+        text-align: center;
+
+        @media ($no-mobile) {
+          font-size: 1.8rem;
+          text-align: left;
+        }
+      }
+
+      .title-image {
+        position: relative;
+        height: 10rem;
+        width: 10rem;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        margin: 1rem 0;
+        left: 25%;
+
+        @media ($no-mobile) {
+          height: 15rem;
+          width: 15rem;
+          left: 0%;
+        }
+        .title-image__img {
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+    }
+  }
+  .title.image {
+    background-position: center;
+    background-size: contain;
+  }
+  .project-coming__container {
+    padding: 2rem 2rem;
+    .project-coming {
+      background-color: white;
+      display: grid;
+      grid-template-columns: 100%;
+      border-radius: 1.7rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 4rem;
+      text-align: center;
+      h3 {
+        font-weight: bold;
+        font-size: 2rem;
+        padding: 2rem 0;
+        @media ($no-mobile) {
+          font-size: 3rem;
+        }
+      }
+      p {
+        font-size: 1.5rem;
+        padding: 2rem 0;
+        @media ($no-mobile) {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
 }

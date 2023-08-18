@@ -2,10 +2,10 @@
 
 .intro__section {
   background-color: rgba(170, 170, 170, 0.185);
-  margin-top: 4.4rem;
+
+  padding-top: 6rem;
 
   padding-bottom: 4rem;
-  width: 100vw;
 
   .container {
     margin: 1rem 2rem;
@@ -43,6 +43,9 @@
         h1 {
           font-size: 2rem;
           font-weight: bold;
+          @media ($no-mobile) {
+            margin-bottom: 2rem;
+          }
         }
 
         p {
@@ -73,6 +76,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      padding: 1rem 0;
       @media ($no-mobile) {
         display: flex;
         flex-direction: row;
@@ -97,6 +101,7 @@
         list-style: none;
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
       }
 
       li {

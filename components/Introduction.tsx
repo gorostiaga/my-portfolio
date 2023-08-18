@@ -7,7 +7,10 @@ import { roboto } from "@/utils/fonts";
 
 const Introduction = () => {
   return (
-    <section className={`${styles.intro__section} ${roboto.className}`}>
+    <section
+      id="introduction"
+      className={`${styles.intro__section} ${roboto.className}`}
+    >
       <div className={styles.container}>
         <div className={styles.intro__main}>
           <div className={styles.image_me}>
