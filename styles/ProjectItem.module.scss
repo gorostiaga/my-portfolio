@@ -80,16 +80,15 @@
       align-items: center;
       margin-top: 2rem;
       padding-bottom: 2rem;
+
       @media ($no-mobile) {
         font-size: 1.5rem;
       }
 
       a {
+        display: flex;
+        align-items: center;
         text-decoration: none;
-        text-align: center;
-      }
-      img {
-        transform: translateY(7px);
       }
     }
   }

@@ -2,6 +2,11 @@ import styles from "@/styles/Projects.module.scss";
 import image1 from "@/public/images/projects/1.jpg";
 import image2 from "@/public/images/projects/2.jpg";
 import image3 from "@/public/images/projects/3.jpg";
+import roadImage from "@/public/images/projects/road.jpg";
+import sunsetImage from "@/public/images/projects/sunset.jpg";
+import circleImage from "@/public/images/projects/circle_art.jpg";
+import stonesImage from "@/public/images/projects/stones.jpg";
+import ladiesImage from "@/public/images/projects/ladies.png";
 import paveImage from "@/public/images/projects/pave.png";
 import eprepImage from "@/public/images/projects/eprep.png";
 import fincaImage from "@/public/images/projects/finca.png";
@@ -21,13 +26,25 @@ function Projects() {
   };
 
   const laoTzu = {
-    url: image2.src,
+    url: roadImage.src,
     text: "The journey of a thousand miles begins with one step",
     author: "Lao Tzu",
   };
 
+  const nietzsche = {
+    url: sunsetImage.src,
+    text: "Art is essentially the affirmation, the blessing, and the deification of existence.",
+    author: "Friedrich Nietzsche",
+  };
+
+  const frankl = {
+    url: ladiesImage.src,
+    text: "Everything can be taken from a man but one thing: the last of the human freedoms to choose one’s attitude in any given set of circumstances, to choose one’s own way.",
+    author: "Victor Frankl",
+  };
+
   const ryanHoliday = {
-    url: image3.src,
+    url: stonesImage.src,
     text: "The obstable is the Way",
     author: "Ryan Holiday",
   };
@@ -63,7 +80,7 @@ function Projects() {
   };
 
   const imageProjectsSE = {
-    backgroundImage: `url(${artImage.src})`,
+    backgroundImage: `url(${circleImage.src})`,
   };
 
   return (
@@ -113,9 +130,9 @@ function Projects() {
         <ProjectItem project={ePrep} inverted />
       </div>
       <ParallaxImage
-        photo={ryanHoliday.url}
-        text={ryanHoliday.text}
-        author={ryanHoliday.author}
+        photo={nietzsche.url}
+        text={nietzsche.text}
+        author={nietzsche.author}
       />
       <div
         id="projectsSE"
@@ -139,9 +156,9 @@ function Projects() {
         </div>
       </div>
       <ParallaxImage
-        photo={ryanHoliday.url}
-        text={ryanHoliday.text}
-        author={ryanHoliday.author}
+        photo={frankl.url}
+        text={frankl.text}
+        author={frankl.author}
       />
       <ProjectItem project={finca} />
       <ParallaxImage

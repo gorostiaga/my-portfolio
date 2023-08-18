@@ -15,11 +15,11 @@
     }
 
     &[id^="projectsSE"] {
-      color: black;
+      color: white;
       background-position: center;
       background-size: cover;
       p {
-        color: rgb(53, 49, 49);
+        color: rgb(146, 140, 140);
       }
     }
     .title-container__title {
@@ -82,7 +82,11 @@
     background-size: contain;
   }
   .project-coming__container {
-    padding: 2rem 2rem;
+    padding: 2rem 0.8rem;
+
+    @media ($no-mobile) {
+      padding: 2rem 2rem;
+    }
     .project-coming {
       background-color: white;
       display: grid;
