@@ -1,10 +1,17 @@
-import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
+import Introduction from "@/components/Introduction";
+import MainNav from "@/components/MainNav";
+import Projects from "@/components/Projects";
 
 export default function Home() {
-  return <></>;
+  return (
+    <>
+      <MainNav />
+      <Introduction />
+      <Projects />
+      <Contact />
+      <Footer />
+    </>
+  );
 }
