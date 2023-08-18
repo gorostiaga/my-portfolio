@@ -1,20 +1,17 @@
-import styles from "@/styles/Projects.module.scss";
 import image1 from "@/public/images/projects/1.jpg";
-import image2 from "@/public/images/projects/2.jpg";
-import image3 from "@/public/images/projects/3.jpg";
-import roadImage from "@/public/images/projects/road.jpg";
-import sunsetImage from "@/public/images/projects/sunset.jpg";
 import circleImage from "@/public/images/projects/circle_art.jpg";
-import stonesImage from "@/public/images/projects/stones.jpg";
-import ladiesImage from "@/public/images/projects/ladies.png";
-import paveImage from "@/public/images/projects/pave.png";
+import compass from "@/public/images/projects/compass.jpg";
 import eprepImage from "@/public/images/projects/eprep.png";
 import fincaImage from "@/public/images/projects/finca.png";
-import compass from "@/public/images/projects/compass.jpg";
-import artImage from "@/public/images/projects/art.jpg";
-import ParallaxImage from "./ParallaxImage";
+import ladiesImage from "@/public/images/projects/ladies.png";
+import paveImage from "@/public/images/projects/pave.png";
+import roadImage from "@/public/images/projects/road.jpg";
+import stonesImage from "@/public/images/projects/stones.jpg";
+import sunsetImage from "@/public/images/projects/sunset.jpg";
+import styles from "@/styles/Projects.module.scss";
 import { roboto } from "@/utils/fonts";
 import Image from "next/image";
+import ParallaxImage from "./ParallaxImage";
 
 import ProjectItem from "./ProjectItem";
 

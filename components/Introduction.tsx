@@ -1,5 +1,5 @@
 import Image from "next/image";
-import img from "../public/images/me.png";
+import img from "@/public/images/me.png";
 import Link from "next/link";
 
 import styles from "@/styles/Introduction.module.scss";
