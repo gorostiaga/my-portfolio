@@ -1,5 +1,5 @@
 import Image from "next/image";
-import img from "@/public/images/me.png";
+import meImage from "@/public/images/me.jpg";
 import Link from "next/link";
 
 import styles from "@/styles/Introduction.module.scss";
@@ -15,7 +15,7 @@ const Introduction = () => {
         <div className={styles.intro__main}>
           <div className={styles.image_me}>
             <Image
-              src={img}
+              src={meImage}
               placeholder="blur"
               alt="me"
               width="250"
