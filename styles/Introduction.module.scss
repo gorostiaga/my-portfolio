@@ -43,6 +43,8 @@
         h1 {
           font-size: 2rem;
           font-weight: bold;
+          padding-bottom: 1.5rem;
+          text-align: center;
           @media ($no-mobile) {
             margin-bottom: 2rem;
           }
@@ -51,6 +53,7 @@
         p {
           font-family: sans-serif;
           font-size: 1.45rem;
+          padding-bottom: 1.5rem;
         }
 
         span {

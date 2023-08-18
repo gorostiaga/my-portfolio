@@ -53,7 +53,7 @@ function Projects() {
   };
 
   const finca = {
-    link: "#",
+    link: "https://hotel-site-v2.vercel.app/",
     image: fincaImage,
     title: "La Finca Eco Lodge Hotel.",
     description:
@@ -151,7 +151,7 @@ function Projects() {
       />
       <div className={styles["project-coming__container"]}>
         <div className={styles["project-coming"]}>
-          <h3>More Projects Comming soon</h3>
+          <h3>More Projects Coming soon</h3>
           <p>
             I am refactoring some old projects in order to publish them here!!
           </p>
