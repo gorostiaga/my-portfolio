@@ -4,6 +4,7 @@ import Link from "next/link";
 
 import styles from "@/styles/Introduction.module.scss";
 import { roboto } from "@/utils/fonts";
+import { techStackData, socialLinks } from "@/config/images";
 
 const Introduction = () => {
   return (
@@ -30,22 +31,16 @@ const Introduction = () => {
               Art for creating new things to change the world!!
             </p>
             <span>
-              <Link href="https://github.com/gorostiaga" target="_blank">
-                <Image
-                  src="/images/github-mark.png"
-                  alt="icon"
-                  width="30"
-                  height="30"
-                />
-              </Link>
-              <Link href="https://linkedin.com/in/gorostiaga" target="_blank">
-                <Image
-                  src="/images/linkedin-icon.png"
-                  alt="icon"
-                  width="30"
-                  height="30"
-                />
-              </Link>
+              {socialLinks.map((link) => (
+                <Link key={link.alt} href={link.url} target="_blank">
+                  <Image
+                    src={link.icon}
+                    alt={link.alt}
+                    width="40"
+                    height="40"
+                  />
+                </Link>
+              ))}
             </span>
           </div>
         </div>
@@ -53,78 +48,17 @@ const Introduction = () => {
           <p>Tech Stack</p>
           <div className={styles.skills__logos}>
             <ul>
-              <li>
-                <Image
-                  src="/images/java-icon.svg"
-                  alt="icon"
-                  width="45"
-                  height="45"
-                  title="Java"
-                />
-              </li>
-              <li>
-                <Image
-                  src="/images/springio-icon.svg"
-                  alt="icon"
-                  width="45"
-                  height="45"
-                  title="Spring"
-                />
-              </li>
-              <li>
-                <Image
-                  src="/images/js-icon.svg"
-                  alt="icon"
-                  width="45"
-                  height="45"
-                  title="Javascript"
-                />
-              </li>
-              <li>
-                <Image
-                  src="/images/react-icon.svg"
-                  alt="icon"
-                  width="45"
-                  height="45"
-                  title="React.js"
-                />
-              </li>
-              <li>
-                <Image
-                  src="/images/next-icon.svg"
-                  alt="icon"
-                  width="45"
-                  height="45"
-                  title="Next.js"
-                />
-              </li>
-              <li>
-                <Image
-                  src="/images/css-icon.svg"
-                  alt="icon"
-                  width="45"
-                  height="45"
-                  title="CSS"
-                />
-              </li>
-              <li>
-                <Image
-                  src="/images/scss-icon.svg"
-                  alt="icon"
-                  width="45"
-                  height="45"
-                  title="Bootstrap"
-                />
-              </li>
-              <li>
-                <Image
-                  src="/images/bootstrap-icon.svg"
-                  alt="icon"
-                  width="45"
-                  height="45"
-                  title="Bootstrap"
-                />
-              </li>
+              {techStackData.map((tech) => (
+                <li key={tech.name}>
+                  <Image
+                    src={tech.icon}
+                    alt={tech.name}
+                    width="45"
+                    height="45"
+                    title={tech.name}
+                  />
+                </li>
+              ))}
             </ul>
           </div>
         </div>

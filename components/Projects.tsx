@@ -1,5 +1,5 @@
 import image1 from "@/public/images/projects/1.jpg";
-import circleImage from "@/public/images/projects/circle_art.jpg";
+import circleImage from "@/public/images/projects/3.jpg";
 import compass from "@/public/images/projects/compass.jpg";
 import eprepImage from "@/public/images/projects/eprep.png";
 import fincaImage from "@/public/images/projects/finca.png";
@@ -67,7 +67,7 @@ function Projects() {
   };
 
   const finca = {
-    link: "https://hotel-site-v2.vercel.app/",
+    link: "https://www.lafincacoroico.com/",
     image: fincaImage,
     title: "La Finca Eco Lodge Hotel.",
     description:
