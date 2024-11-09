@@ -20,6 +20,18 @@ export const techStackData = [
     icon: "/images/next-icon.svg",
   },
   {
+    name: "Kotlin",
+    icon: "/images/kotlin-icon.svg",
+  },
+  {
+    name: "Python",
+    icon: "/images/python-icon.svg",
+  },
+  {
+    name: "AWS",
+    icon: "/images/aws-icon.svg",
+  },
+  {
     name: "CSS",
     icon: "/images/css-icon.svg",
   },
@@ -30,14 +42,6 @@ export const techStackData = [
   {
     name: "Bootstrap",
     icon: "/images/bootstrap-icon.svg",
-  },
-  {
-    name: "Kotlin",
-    icon: "/images/kotlin-icon.svg",
-  },
-  {
-    name: "Python",
-    icon: "/images/python-icon.svg",
   },
 ];
 
